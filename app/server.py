@@ -10,6 +10,7 @@ from tts_handler import generate_speech, get_models, get_voices
 from utils import getenv_bool, require_api_key, AUDIO_FORMAT_MIME_TYPES
 
 app = Flask(__name__)
+CORS(app)
 load_dotenv()
 
 API_KEY = os.getenv('API_KEY', 'your_api_key_here')
