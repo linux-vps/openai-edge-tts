@@ -1,6 +1,7 @@
 # server.py
 
 from flask import Flask, request, send_file, jsonify
+from flask_cors import CORS
 from gevent.pywsgi import WSGIServer
 from dotenv import load_dotenv
 import os
