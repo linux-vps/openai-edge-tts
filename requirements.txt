@@ -1,4 +1,5 @@
 flask
+flask_cors
 gevent
 python-dotenv
 edge-tts
